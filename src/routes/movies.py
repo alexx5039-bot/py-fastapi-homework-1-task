@@ -58,6 +58,7 @@ async def get_movies(
         "total_items": total_items,
     }
 
+
 @router.get("/{movie_id}/", response_model=MovieDetailResponseSchema)
 async def get_movie_by_id(
         movie_id: int,
