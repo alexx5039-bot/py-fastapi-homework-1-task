@@ -9,7 +9,7 @@ from schemas.movies import MovieListResponseSchema
 
 router = APIRouter(prefix="/movies", tags=["movies"])
 
-BASE_URL = "/api/v1/theater/movies/"
+BASE_URL = "/theater/movies/"
 
 
 @router.get("/", response_model=MovieListResponseSchema)
